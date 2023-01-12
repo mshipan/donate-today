@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', Roboto, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Inter', Roboto, Lobster, sans-serif;
 }
 
 .header{
     width: 100%;
-    height: 669px;
+    height: 70vh;
     /* Linear Gradient & Blend Mode */
-    background-image: url(../images/donation8.jpg), linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+    background-image: url(../images/donation12.png), linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
     background-blend-mode: overlay;
     
     background-repeat: no-repeat;
@@ -18,9 +19,12 @@
 .banner{
     margin: 0 auto;
     text-align: center;
-    padding: 174px 307px;
-    left: 307px;
-    top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
 }
 
 .banner-title h1{
@@ -43,7 +47,7 @@
 
 .btn-primary{
     cursor: pointer;
-    width: 160px;
+    width: auto;
     height: 56px;
     background:#FF5959;
     border-radius: 5px;
@@ -55,14 +59,22 @@
     color: #FFFFFF;
 }
 
+.btn-primary:hover{
+    background:#fd3232;
+    transition: all 1s ease;
+}
+
 .donate{
     width: 100%;
 }
 
 .donate-area{
-    margin: 0 auto;
+    margin-top: 150px;
     text-align: center;
-    padding: 150px 0 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .donate-title h1{
@@ -77,24 +89,26 @@
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    /* line-height: 28px; */
     text-align: center;
     color: #707070;
-    padding: 0 374px;
+    /* padding: 0 374px; */
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
 .donate-tk{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
-    padding: 0 338px;
+    /* padding: 0 338px; */
     margin-bottom: 60px;
 }
 
 .donate-tk ul{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .donate-tk ul li{
@@ -118,7 +132,7 @@
     background-blend-mode: overlay;
 }
 
-.donate-area p{
+.donate-area > p{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
@@ -131,4 +145,277 @@
     border: 1px solid #DADADA;
     width: 50%;
     margin: 0 auto;
+}
+
+.donate-plan{
+    width: 100%;
+}
+
+.donate-plan-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.donate-plan-title h1{
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.donate-plan-description p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #707070;
+    margin-bottom: 50px;
+}
+
+.donate-card{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.donate-box{
+    padding: 60px 10px 55px 10px;
+}
+
+.donate-box img{
+    margin-bottom: 30px;
+}
+
+.donate-box-title h3{
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    color: #121212;
+}
+
+.donate-box-description p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+}
+/* Lives Depends Donation Area */
+.depend-donation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.depend-donation-area{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.depend-donation-text{
+    width: 50%;
+    height: 40vh;
+    padding-top: 50px;
+}
+
+.depend-donation-text > h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.depend-donation-text > p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    color: #707070;
+}
+
+.depend-donation-text > .btn-primary{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.depend-donation-image > img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* Survival Need Area */
+.survival{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.survival-area{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.survival-text{
+    width: 50%;
+    height: 40vh;
+    padding-top: 50px;
+}
+
+.survival-text > h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.survival-text > p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    color: #707070;
+}
+
+.survival-text > .btn-primary{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.survival-image > img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* Update Area */
+
+.update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.update-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-title > h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #121212;
+}
+
+.update-description > p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #707070;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.update-form{
+    width: 800px;
+    height: 200px;
+    background: #FFF4D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-form > input[type="email"]{
+    background-color: #D9D9D9;
+    width: 275px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 5px 0px 0px 5px;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    color: #AA9F9F;
+}
+
+.update-form > input[type="submit"]{
+    width: 157px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #FF5959;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.update-form > input[type="submit"]:hover{
+    background: #fd3232;
+    transition: all 1s ease;
+}
+
+/* Footer Section Area */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0B0D17;
+    width: 100%;
+    height: 20vh;
+}
+
+.footer-area > h1{
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    color: #FF5959;
+    margin-bottom: 25px;
+}
+
+.footer-area > p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #D9DBE1;
 }
